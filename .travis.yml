@@ -2,3 +2,8 @@ language: java
 jdk: openjdk8
 after_success:
   - bash <(curl -s https://codecov.io/bash)
+deploy:
+  provider: heroku
+  api_key:
+    secure: jTzZhMGHReZBCXOxeRPJDvgQKVOSWJPM7AvUSD4YydY+0sDVUAVjInkI6/Miuh6Ma6IaM284QPzsTZC2KhDDUVa/yx8jSXFzJOpxnjZWn1g7/v/tZtLqecb2XncuGab1FoWzDJgQcWQIWJoy7uuogaCQGm5yZ11OoXkwEnDjC8V8fu1ZFZeZIAr8O57Mmu1pOEkkIcsj/w2+IMsEhQfuy1N5HIw+rfK2Bn30awSakOz+OspWSBhhD9sdUJo+SpdqhUzjYqPS23ujLyJwfivISRKramnjwYqjB6AVyyYcZkK+vc+w1vgjT+05BVq1nAjMuplhPzXJc9H0SUfA55pUKO2IlxnZQpPGTDjI49MBtB6dOkakTQzju8ZOBn3/lnXO3/+Lagc8eS3wW5xzs2BeHGIMwSUAs6qHkJTpKW278l6p62DagFBjFIuC9F0xw/wVJapuOEwczSjBTR+Tlo4yvM0ghuGQTv/lR0i9tijhTuMg59bao6GIxfFZqr2AFdNtQJGY+NSgw8Geuakegw9T4QIVMiDaWYR0qcB5DHBzJx2ykM3f4xRrt2c8tZO85pq3TwXMzcpKz8rWmcShK9DcM+SlBHaQnsAK91hV3QQ0BewQBjtvak6EwCfDayhl5Arw9jRo7Ypa4XoavTqYPeCBKG7fGE0Bg9zAv/amwfvB1Ug=
+  app: github-spring-petclinic-rest
